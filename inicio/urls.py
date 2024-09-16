@@ -4,5 +4,7 @@ from . import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('post/<str:pk>', views.post, name="post"),
-    path('form_post/', views.formulario, name="formPost")
+    path('form_post/', views.formulario, name="formPost"),
+    path('delete-post/<str:pk>/', views.deletePost, name="delete-post"),
+    path('update-post/<str:pk>/', views.updatePost, name="update-post")
 ]
